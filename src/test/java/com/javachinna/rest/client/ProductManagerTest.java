@@ -21,7 +21,7 @@ import com.javachinna.rest.client.model.ProductRequest;
 class ProductManagerTest {
 	
 	ProductManagerConfig productManagerServiceConfig = new ProductManagerConfig(
-			"http://localhost:8080/api/", "admin@javachinna.com", "admin@");
+			"http://localhost:8080/api/", "admin@javachinna.com", "admin@", null, null, null, null);
 	ProductManager productManager = new ProductManagerImpl(productManagerServiceConfig);
 	
 	@Test
@@ -75,8 +75,7 @@ class ProductManagerTest {
 
 	private Integer getProductId() throws Exception {
 		List<HashMap<String, Object>> list = productManager.getAllProducts();
-		Integer productId = (Integer) list.get(0).get("id");
-		return productId;
+		return (Integer) list.get(0).get("id");
 	}
 
 	@Test
