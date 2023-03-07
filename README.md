@@ -29,3 +29,5 @@
 [Build a Lightweight RESTful Client with Java
 ](https://www.javachinna.com/java-rest-api-client/)
 
+[Configure Proxy Authentication for Java HTTP Client](https://www.javachinna.com/java-httpclient-proxy-authentication/)
+
